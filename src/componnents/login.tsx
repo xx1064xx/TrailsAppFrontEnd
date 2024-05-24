@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../styles/LoginRegister.css'
 
 interface LoginCredentials {
   username: string;
@@ -8,26 +9,30 @@ interface LoginCredentials {
 function LoginForm() {
  
   return (
-    <div>
+    <div className='fullDiv'>
       <h2>Login</h2>
       <form>
         <div>
-          <label>Username:</label>
+          <label>Email:</label>
           <input
-            type="text"
-            name="username"
+            type="email"
+            name="email"
             
           />
         </div>
         <div>
-          <label>Password:</label>
+          <label>Passwort:</label>
           <input
             type="password"
             name="password"
 
           />
         </div>
+        <div>
+        <a href="/register">noch keinen Account?</a>
         <button type="submit">Login</button>
+        </div>
+        
       </form>
     </div>
   );
