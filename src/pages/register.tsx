@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../componnents/navbar";
-import RegisterForm from "../componnents/register";
+import RegisterForm from "../componnents/registerForm";
 
 function LoginPage() {
  

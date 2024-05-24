@@ -1,11 +1,8 @@
 import { useState, useEffect, FormEvent } from 'react'
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Navbar from './componnents/navbar';
 import LoginPage from './pages/login';
 import RegisterPage from './pages/register';
-
-import './App.css'
 import IndexPage from './pages';
 
 interface WeatherData {
