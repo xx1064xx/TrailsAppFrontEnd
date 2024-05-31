@@ -23,7 +23,7 @@ function LoginForm() {
   });
 
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
-  const [isLoading, setIsLoading] = useState(false); // Track loading state
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setCredentials({
@@ -53,7 +53,7 @@ function LoginForm() {
       
       console.log(data);
 
-      return navigate("/");
+      return navigate("/Trails");
 
     } catch (error: any) {
       if (error.response) {

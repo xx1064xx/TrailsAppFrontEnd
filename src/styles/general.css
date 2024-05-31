@@ -1,0 +1,18 @@
+
+
+.frameDiv{
+    display: flex;
+    justify-content: center;
+    background-image: url('/public/mountainPicture3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 500px;
+    
+}
+
+.mainDiv{
+    max-width: 1400px;
+    width: 100%;
+}
