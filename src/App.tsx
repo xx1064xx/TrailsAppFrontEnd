@@ -6,14 +6,11 @@ import RegisterPage from './pages/register';
 import IndexPage from './pages';
 import TrailsPage from './pages/trails';
 import UserPage from './pages/user';
+import WeatherPage from './pages/weather';
 
 
 
 function App() {
-
-  
-
-  
 
   return (
     <>
@@ -25,6 +22,7 @@ function App() {
         <Route path='/Login' element={<LoginPage/>}/>
         <Route path='/Register' element={<RegisterPage/>}/>
         <Route path='/User' element={<UserPage/>}/>
+        <Route path='/Weather' element={<WeatherPage/>}/>
       </Routes>
     </BrowserRouter>
     </>

@@ -2,6 +2,8 @@ import { ReactDOM, useEffect} from "react";
 import { Navigate, useNavigate } from "react-router-dom";
 
 import Navbar from "../componnents/navbar";
+import SpaceField from "../componnents/space";
+import TrailTable from "../componnents/trailTable";
 
 function TrailsPage() {
 
@@ -25,7 +27,8 @@ function TrailsPage() {
     return (
       <div>
         <Navbar/> {}
-        
+        <SpaceField/> {}
+        <TrailTable/> {}
       </div>
     );
   };
