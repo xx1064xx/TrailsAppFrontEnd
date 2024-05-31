@@ -21,7 +21,7 @@ h2{
 .frameDiv{
     display: flex;
     justify-content: center;
-    background-image: url('/public/mountainPicture3.jpg');
+    background-image: url('/mountainPicture3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -35,4 +35,9 @@ h2{
     width: 100%;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.rest {
+    height: 100vh;
+    background-color: #f2f2f2;
 }
