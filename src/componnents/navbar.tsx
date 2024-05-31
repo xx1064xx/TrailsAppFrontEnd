@@ -11,9 +11,11 @@ function Navbar() {
       <h1>Trail Tales</h1>
       <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="/login">Login</a></li>
-        <li><a href="/register">Register</a></li>
+        <li><a href="/Trails">Trails</a></li>
       </ul>
+      <div>
+        <a href="/User">Account</a>
+      </div>
     </nav>
   );
 }
