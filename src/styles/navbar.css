@@ -6,7 +6,7 @@ nav{
 }
 
 .logoDiv{
-    background-color: var(--white);
+    background-color: var(--lighterWhite);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,7 +20,8 @@ img{
 }
 
 h1{
-    min-width: 150px;
+    white-space: nowrap;
+    margin-right: 5px;
 }
 
 
@@ -47,7 +48,7 @@ a {
 .navLoginButton{
     transition: ease 0.3s;
     border-radius: 5px;
-    background-color: var(--black);
+    background-color: var(--darkBlue);
 }
 
 .navLoginButton:hover {

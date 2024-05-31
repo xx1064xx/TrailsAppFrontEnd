@@ -4,6 +4,9 @@ import { Navigate, useNavigate } from "react-router-dom";
 import Navbar from "../componnents/navbar";
 import SpaceField from "../componnents/space";
 import TrailTable from "../componnents/trailTable";
+import Footer from "../componnents/footer";
+
+import '../styles/footer.css'
 
 function TrailsPage() {
 
@@ -29,6 +32,8 @@ function TrailsPage() {
         <Navbar/> {}
         <SpaceField/> {}
         <TrailTable/> {}
+        <Footer/> {}
+        
       </div>
     );
   };

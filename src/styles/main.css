@@ -2,7 +2,7 @@
 *{
     padding: 0;
     margin: 0;
-    color: var(--black);
+    color: var(--darkBlue);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -27,17 +27,36 @@ h2{
     background-position: center;
 
     height: 500px;
+
+    position: relative;
     
 }
 
 .mainDiv{
-    max-width: 1400px;
+    max-width: 1500px;
     width: 100%;
     margin-left: 10px;
     margin-right: 10px;
 }
 
 .rest {
+    margin-top: -500px;
     height: 100vh;
-    background-color: #f2f2f2;
+    width: 100vh;
+    width: 100%;
+    z-index: -1;
+    position: fixed;
+    background-color: var(--lightWhite);
+}
+
+footer{
+    min-height: 10rem;
+    background-color: var(--darkBlue);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contentDiv{
+    min-height: calc(100vh - 5rem - 10rem - 275px);
 }

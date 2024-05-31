@@ -1,5 +1,13 @@
 :root {
     --white: #ffffff;
+    --lighterWhite:#e9ebf0;
+    --lightWhite: #d9dee5;
+    --hoverWhite: #e4e7ec;
     --black: #000000;
     --lighWhite: #dddddd;
+    --vineRed: #732036;
+    --darkerRed: #401A2F;
+    --darkerGray: #64758C;
+    --lightGray: #8090A6;
+    --darkBlue: #081826;
   }
