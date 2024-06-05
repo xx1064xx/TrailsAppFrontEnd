@@ -1,4 +1,8 @@
 .space{
 
-    height: 275px
+    height: var(--spaceHeight)
 }
+
+.bigSpace{
+    height: calc(var(--bigSpaceHeight));
+}    

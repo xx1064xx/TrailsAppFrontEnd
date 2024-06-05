@@ -2,6 +2,7 @@ import React from "react";
 
 import Navbar from "../componnents/navbar";
 import WeatherTable from "../componnents/weather";
+import Footer from "../componnents/footer";
 
 
 function IndexPage() {
@@ -11,6 +12,7 @@ function IndexPage() {
         
         <Navbar/> {}
         <WeatherTable/> {}
+        <Footer/> {}
        
       </div>
     );

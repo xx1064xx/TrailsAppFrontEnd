@@ -26,7 +26,7 @@ h2{
     background-repeat: no-repeat;
     background-position: center;
 
-    height: 500px;
+    height: var(--mainPictureHeight);
 
     position: relative;
     
@@ -40,7 +40,7 @@ h2{
 }
 
 .rest {
-    margin-top: -500px;
+    margin-top: calc(0px - var(--mainPictureHeight));
     height: 100vh;
     width: 100vh;
     width: 100%;
@@ -49,14 +49,16 @@ h2{
     background-color: var(--lightWhite);
 }
 
-footer{
-    min-height: 10rem;
-    background-color: var(--darkBlue);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+.contentDiv{
+    min-height: calc(100vh - var(--headerHeight) - 10rem - 275px);
 }
 
-.contentDiv{
-    min-height: calc(100vh - 5rem - 10rem - 275px);
+.contentCard {
+    display: flex;
+    overflow: hidden;
+    min-height: calc(100vh - var(--headerHeight) - var(--spaceHeight));
+    margin-bottom: 10px;
+    background-color: var(--lighterWhite);
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
 }

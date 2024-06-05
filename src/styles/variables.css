@@ -10,4 +10,12 @@
     --darkerGray: #64758C;
     --lightGray: #8090A6;
     --darkBlue: #081826;
+
+    --mainPictureHeight: 500px;
+    --headerHeight: 5rem;
+
+    --spaceHeight: 275px;
+    --bigSpaceHeight: calc(var(--mainPictureHeight) - var(--headerHeight));
+
+
   }

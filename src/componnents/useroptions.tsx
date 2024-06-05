@@ -19,7 +19,7 @@ function UserOptions() {
         
         localStorage.removeItem('jwt-token');
 
-        navigate('/');
+        navigate('/Login');
 
       };
 

@@ -68,38 +68,44 @@ function LoginForm() {
   };
 
   return (
-    <div className='fullDiv'>
-      <h2>Login</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Email:</label>
-          <input
-            type="email"
-            name="email"
-            value={credentials.email}
-            onChange={handleChange}
-            required
-          />
+    <div className='contentCard'>
+      <div className='loginDiv'>
+        <h2>Login</h2>
+        <form onSubmit={handleSubmit}>
+          <div>
+            <label>Email:</label>
+            <input
+              type="email"
+              name="email"
+              value={credentials.email}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div>
+            <label>Passwort:</label>
+            <input
+              type="password"
+              name="password"
+              value={credentials.password}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div>
+            <a href="/register">noch keinen Account?</a>
+            <button type="submit" disabled={isLoading}>
+              {isLoading ? 'Logging in...' : 'Login'}
+            </button>
+          </div>
+          {errorMessage && <p className="error-message">{errorMessage}</p>}
+        </form>
+        {isLoading && <div className="loading">Loading...</div>}
         </div>
-        <div>
-          <label>Passwort:</label>
-          <input
-            type="password"
-            name="password"
-            value={credentials.password}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div>
-          <a href="/register">noch keinen Account?</a>
-          <button type="submit" disabled={isLoading}>
-            {isLoading ? 'Logging in...' : 'Login'}
-          </button>
-        </div>
-        {errorMessage && <p className="error-message">{errorMessage}</p>}
-      </form>
-      {isLoading && <div className="loading">Loading...</div>}
+      <div className='theOtherDiv'>
+
+      </div>
+      
     </div>
   );
 };
