@@ -73,14 +73,17 @@ function LoginForm() {
         <h2>Login</h2>
         <form onSubmit={handleSubmit}>
           <div>
-            <label>Email:</label>
-            <input
+            <label>
+              Email
+              <input
               type="email"
               name="email"
               value={credentials.email}
               onChange={handleChange}
               required
             />
+            </label>
+            
           </div>
           <div>
             <label>Passwort:</label>
@@ -103,7 +106,8 @@ function LoginForm() {
         {isLoading && <div className="loading">Loading...</div>}
         </div>
       <div className='theOtherDiv'>
-
+        <h1>Trail Tales</h1>
+        <img src='../public/TrailTalesWhite.svg'></img>
       </div>
       
     </div>
