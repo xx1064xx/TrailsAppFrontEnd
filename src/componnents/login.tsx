@@ -82,8 +82,8 @@ function LoginForm() {
               required
             />
           </div>
-          <div>
-            <input className='inputDiv'
+          <div className='inputDiv'>
+            <input
               type="password"
               name="password"
               placeholder='Password'
