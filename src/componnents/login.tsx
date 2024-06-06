@@ -71,29 +71,29 @@ function LoginForm() {
     <div className='contentCard'>
       <div className='loginDiv'>
         <h2>Login</h2>
-        <form onSubmit={handleSubmit}>
-          <div>
-            <label>
-              Email
-              <input
+        <form className='loginRegisterForm' onSubmit={handleSubmit}>
+          <div className='inputDiv'>
+          <input
               type="email"
               name="email"
+              placeholder='Email'
               value={credentials.email}
               onChange={handleChange}
               required
             />
-            </label>
-            
           </div>
           <div>
-            <label>Passwort:</label>
-            <input
+            <input className='inputDiv'
               type="password"
               name="password"
+              placeholder='Password'
               value={credentials.password}
               onChange={handleChange}
               required
             />
+          </div>
+          <div>
+            <a href='/skillIssue'>Forgot password</a>
           </div>
           <div>
             <a href="/register">noch keinen Account?</a>
@@ -106,8 +106,8 @@ function LoginForm() {
         {isLoading && <div className="loading">Loading...</div>}
         </div>
       <div className='theOtherDiv'>
-        <h1>Trail Tales</h1>
-        <img src='../public/TrailTalesWhite.svg'></img>
+        <h1 className='white'>Trail Tales</h1>
+        <img src='../TrailTalesWhite.svg'></img>
       </div>
       
     </div>

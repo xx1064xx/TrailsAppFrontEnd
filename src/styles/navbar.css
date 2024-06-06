@@ -12,7 +12,8 @@ nav{
     justify-content: center;
     border-end-start-radius: 10px;
     border-bottom-right-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    
 }
 
 img{
@@ -33,10 +34,6 @@ ul{
     display: flex;
 }
 
-a {
-    text-decoration: none;
-    color: var(--white);
-}
 
 .topNavLoginButton{
     display: flex;

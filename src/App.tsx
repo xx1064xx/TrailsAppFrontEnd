@@ -7,6 +7,7 @@ import IndexPage from './pages';
 import TrailsPage from './pages/trails';
 import UserPage from './pages/user';
 import WeatherPage from './pages/weather';
+import SkillIssue from './pages/skillIssue';
 
 
 
@@ -23,6 +24,7 @@ function App() {
         <Route path='/Register' element={<RegisterPage/>}/>
         <Route path='/User' element={<UserPage/>}/>
         <Route path='/Weather' element={<WeatherPage/>}/>
+        <Route path='/skillIssue' element={<SkillIssue/>}/>
       </Routes>
     </BrowserRouter>
     </>

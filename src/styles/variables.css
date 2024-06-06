@@ -13,6 +13,7 @@
 
     --mainPictureHeight: 500px;
     --headerHeight: 5rem;
+    --contentWith: 1500px;
 
     --spaceHeight: 275px;
     --bigSpaceHeight: calc(var(--mainPictureHeight) - var(--headerHeight));

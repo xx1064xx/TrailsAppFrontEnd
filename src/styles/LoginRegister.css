@@ -1,3 +1,27 @@
+input{
+    transition: 0.3s ease;
+    border: none;
+    outline: none;
+    background-color: white;
+    border-radius: 100px;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    width: calc(100% + 10px);
+}
+
+.inputDiv{
+    width: 100%;
+}
+
+.loginRegisterForm{
+    width: calc(100% - 100px);
+    max-width: 400px;
+}
+
 .loginDiv{
     display: flex;
     width: 50%;
@@ -13,8 +37,4 @@
     background-color: var(--vineRed);
     background-position: center;
     width: 50%;
-}
-
-h1{
-    color: var(--lighterWhite);
 }

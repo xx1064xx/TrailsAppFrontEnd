@@ -1,0 +1,18 @@
+.skillIssueBackground{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--vineRed);
+    height: 100vh;
+    width: 100%;
+}
+
+body .frameDiv{
+    background-image: none;
+    background-color: var(--vineRed);
+    
+}
+
+body .rest{
+    background-color: var(--vineRed);
+}
