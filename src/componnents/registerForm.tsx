@@ -71,59 +71,68 @@ function RegisterForm() {
   };
 
   return (
-    <div>
+    <div className='contentCard'>
+      <div className='loginDiv'>
       <h2>Register</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Email:</label>
+      <form className='loginRegisterForm' onSubmit={handleSubmit}>
+        <div className='inputDiv'>
           <input
             type="email"
             name="email"
+            placeholder='Email'
             value={credentials.email}
             onChange={handleChange}
             required
           />
         </div>
-        <div>
-          <label>First Name:</label>
+        <div className='inputDiv'>
           <input
             type="text"
             name="firstname" 
+            placeholder='First Name'
             value={credentials.firstname}
             onChange={handleChange}
             required
           />
         </div>
-        <div>
-          <label>Last Name:</label>
+        <div className='inputDiv'>
           <input
             type="text"
             name="lastname"
+            placeholder='Last Name'
             value={credentials.lastname}
             onChange={handleChange}
             required
           />
         </div>
-        <div>
-          <label>Password:</label>
+        <div className='inputDiv'>
           <input
             type="password"
             name="password"
+            placeholder='Password'
             value={credentials.password}
             onChange={handleChange}
             required
           />
         </div>
-        <div>
-          <a href="/Login">zum Login</a>
-          <button type="submit" disabled={isLoading}>
+        <div className='inputDiv'>
+          <button className='submitButton' type="submit" disabled={isLoading}>
             {isLoading ? 'Registering...' : 'Register'}
           </button>
+        </div>
+        <div>
+          <a href="/Login">zum Login</a>
         </div>
         {errorMessage && <p className="error-message">{errorMessage}</p>}
       </form>
       {isLoading && <div className="loading">Loading...</div>}
+      </div>
+      <div className='theOtherDiv'>
+        <h1 className='white'>Trail Tales</h1>
+        <img src='../TrailTalesWhite.svg'></img>
+      </div>
     </div>
+      
   );
 };
 

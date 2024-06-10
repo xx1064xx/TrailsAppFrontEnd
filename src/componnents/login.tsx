@@ -95,11 +95,14 @@ function LoginForm() {
           <div>
             <a href='/skillIssue'>Forgot password</a>
           </div>
-          <div>
-            <a href="/register">noch keinen Account?</a>
-            <button type="submit" disabled={isLoading}>
+          <div className='inputDiv'>
+            
+            <button className='submitButton' type="submit" disabled={isLoading}>
               {isLoading ? 'Logging in...' : 'Login'}
             </button>
+          </div>
+          <div className='inputDiv'>
+            <a href="/register">noch keinen Account?</a>
           </div>
           {errorMessage && <p className="error-message">{errorMessage}</p>}
         </form>
