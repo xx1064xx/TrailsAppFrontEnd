@@ -6,6 +6,7 @@ interface RegisterCredentials {
   firstname: string;
   lastname: string;
   password: string;
+  passwordRepeat: string;
 }
 
 interface RegisterResponse {
@@ -23,6 +24,7 @@ function RegisterForm() {
     firstname: '',
     lastname: '',
     password: '',
+    passwordRepeat: '',
   });
 
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
@@ -116,12 +118,22 @@ function RegisterForm() {
           />
         </div>
         <div className='inputDiv'>
-          <button className='submitButton' type="submit" disabled={isLoading}>
+          <input
+            type="password"
+            name="password"
+            placeholder='Repeat Password'
+            value={credentials.passwordRepeat}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className='inputDiv'>
+          <button className='submitButton normalFont' type="submit" disabled={isLoading}>
             {isLoading ? 'Registering...' : 'Register'}
           </button>
         </div>
         <div>
-          <a href="/Login">zum Login</a>
+          <a className='tinyFont' href="/Login">zum Login</a>
         </div>
         {errorMessage && <p className="error-message">{errorMessage}</p>}
       </form>

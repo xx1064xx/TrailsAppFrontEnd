@@ -56,7 +56,7 @@ function Navbar() {
       <div className="topNavLoginButton">
         <div className="navLoginButton">
         {userData ? (
-            <a href="/User">{userData.firstname} {userData.lastname} →</a>
+            <a className="white" href="/User">{userData.firstname} {userData.lastname} →</a>
           ) : (
             <a className="white" href="/Login">Login</a>
           )}

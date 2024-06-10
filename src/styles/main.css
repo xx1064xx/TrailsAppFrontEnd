@@ -12,6 +12,14 @@ a{
     text-decoration: none;
 }
 
+.tinyFont{
+    font-size: 15px;
+}
+
+.normalFont{
+    font-size: 18px;
+}
+
 h1{
     font-size: 30px;
 }
