@@ -33,11 +33,12 @@ h2{
 }
 
 .primaryButton {
+    width: 100%;
     padding: 15px;
     color: var(--lighterWhite);
     outline: none;
     border: none;
-    border-radius: 5px;
+    border-radius: 100px;
     background-color: var(--darkBlue);
     cursor: pointer;
     white-space: nowrap;
@@ -75,7 +76,8 @@ h2{
 }
 
 .contentDiv{
-    min-height: calc(100vh - var(--headerHeight) - 10rem - 275px);
+    min-height: calc(100vh - var(--headerHeight) - 10rem - 275px - 85px);
+    width: 100%;
 }
 
 .contentCard {

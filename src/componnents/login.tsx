@@ -106,7 +106,7 @@ function LoginForm() {
           </div>
           {errorMessage && <p className="error-message">{errorMessage}</p>}
         </form>
-        {isLoading && <div className="loading">Loading...</div>}
+        
         </div>
       <div className='theOtherDiv'>
         <h1 className='white'>Trail Tales</h1>
