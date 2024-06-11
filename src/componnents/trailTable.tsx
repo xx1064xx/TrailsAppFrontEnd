@@ -20,6 +20,12 @@ function TrailTable() {
         console.log("sum");
     };
 
+    const createTrail = () => {
+        
+      
+
+    };
+
     useEffect(() => {
         const effectFunction = async () => {
           if (isInitial) {
@@ -53,16 +59,27 @@ function TrailTable() {
     
 
     return (
-      <div className="contentDiv">
-        {trails.map((trail) => ( 
-            <div className="background" onClick={getTrail} key={trail.trailId}>
-                <div className="content">
-                <h2>{trail.name}</h2>
-                <p>{trail.location}</p>
-                </div>
-            </div>
-        ))}
+      <div>
+        <div className="buttonCard">
+          <div className="buttonInlineCard">
+            <h1>Trails</h1>
+          </div>
+          <div>
+            <button onClick={createTrail} className="primaryButton mr10">Add Trail</button>
+          </div>
+        </div>
+        <div className="contentDiv">
+          {trails.map((trail) => ( 
+              <div className="background" onClick={getTrail} key={trail.trailId}>
+                  <div className="content">
+                  <h2>{trail.name}</h2>
+                  <p>{trail.location}</p>
+                  </div>
+              </div>
+          ))}
+        </div>
       </div>
+      
         
         
     );
