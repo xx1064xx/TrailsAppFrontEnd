@@ -1,0 +1,88 @@
+.trailViewBox{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: var(--lighterWhite);
+    width: calc(50% - 5px);
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.trailViewListDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: calc(100% - 22px);
+
+}
+
+.trailViewListInfo{
+    display: flex;
+    align-items: center;
+}
+
+.trailViewTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trailSpecs{
+    flex: 1 1 211px;
+    
+}
+.trailWeather{
+    flex: 1 1 211px;
+    
+}
+.trailButtons{
+    flex: 1 1 48px;
+    width: calc(50% - 5px);
+    margin-bottom: 10px;
+    
+}
+.trailMap{
+    margin-left: 10px;
+    flex: 1 1 490px;
+    
+}
+
+.inlineTrailCardDiv{
+    margin: 10px;
+    height: calc(100% - 20px);
+    width: calc(100% -20px);
+}
+
+@media screen and (max-width: 768px) {
+    
+    .trailViewBox{
+        height: 1000px;
+        flex-wrap: nowrap;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .trailSpecs{
+        
+        order: 1;
+    }
+    .trailWeather{
+        
+        order: 2;
+    }
+    .trailButtons{
+        width: 100%;
+        order: 4;
+    }
+    .trailMap{
+        margin-left: 0px;
+        order: 3;
+    }
+
+  }

@@ -120,7 +120,7 @@ function RegisterForm() {
         <div className='inputDiv'>
           <input className='loginInput'
             type="password"
-            name="password"
+            name="passwordRepeat"
             placeholder='Repeat Password'
             value={credentials.passwordRepeat}
             onChange={handleChange}

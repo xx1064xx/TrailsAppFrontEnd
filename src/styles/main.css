@@ -55,6 +55,16 @@ input{
     white-space: nowrap;
 }
 
+.deleteButton {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    border-radius: 100px;
+    color: var(--lighterWhite);
+    background-color: var(--darkerRed);
+}
+
 .frameDiv{
     display: flex;
     justify-content: center;
