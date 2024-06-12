@@ -55,14 +55,28 @@ input{
     white-space: nowrap;
 }
 
+.secondaryButton {
+    width: 100%;
+    height: 100%;
+    background-color: var(--darkerGray);
+    outline: none;
+    border: none;
+    border-radius: 100px;
+    padding: 15px;
+    color: var(--lighterWhite);
+    cursor: pointer;
+}
+
 .deleteButton {
     width: 100%;
     height: 100%;
     outline: none;
     border: none;
+    padding: 15px;
     border-radius: 100px;
     color: var(--lighterWhite);
     background-color: var(--darkerRed);
+    cursor: pointer;
 }
 
 .frameDiv{

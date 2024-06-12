@@ -57,6 +57,23 @@
     width: calc(100% -20px);
 }
 
+.deleteConfirm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--lighterWhite);
+    height: 490px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.cancelDeleteButtonDiv{
+    display: flex;
+    
+}
+
 @media screen and (max-width: 768px) {
     
     .trailViewBox{

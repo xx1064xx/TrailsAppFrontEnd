@@ -39,16 +39,6 @@ function TrailTable() {
       });
     };
 
-    const getTrail = () => {
-        
-        console.log("sum");
-    };
-
-    const createTrail = () => {
-        
-      
-
-    };
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
