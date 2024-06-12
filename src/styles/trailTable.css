@@ -43,9 +43,26 @@
 }
 
 .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 80px;
     width: 100%;
     margin: 10px;
+}
+
+.trailListDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 33.3333333%;
+    height: 100%;
+}
+
+.trailListInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .createDiv{
@@ -61,12 +78,6 @@
     
 }
 
-.trailsInfoDiv{
-    
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
 
 .createTrailInline{
     display: flex;

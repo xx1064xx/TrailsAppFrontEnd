@@ -8,6 +8,7 @@ import TrailsPage from './pages/trails';
 import UserPage from './pages/user';
 import WeatherPage from './pages/weather';
 import SkillIssue from './pages/skillIssue';
+import TrailViewPage from './pages/trailView';
 
 
 
@@ -25,6 +26,7 @@ function App() {
         <Route path='/User' element={<UserPage/>}/>
         <Route path='/Weather' element={<WeatherPage/>}/>
         <Route path='/skillIssue' element={<SkillIssue/>}/>
+        <Route path='/TrailView/:id' element={<TrailViewPage/>}/>
       </Routes>
     </BrowserRouter>
     </>

@@ -78,7 +78,7 @@ function RegisterForm() {
       <h2>Register</h2>
       <form className='loginRegisterForm' onSubmit={handleSubmit}>
         <div className='inputDiv'>
-          <input
+          <input className='loginInput'
             type="email"
             name="email"
             placeholder='Email'
@@ -88,7 +88,7 @@ function RegisterForm() {
           />
         </div>
         <div className='inputDiv'>
-          <input
+          <input className='loginInput'
             type="text"
             name="firstname" 
             placeholder='First Name'
@@ -98,7 +98,7 @@ function RegisterForm() {
           />
         </div>
         <div className='inputDiv'>
-          <input
+          <input className='loginInput'
             type="text"
             name="lastname"
             placeholder='Last Name'
@@ -108,7 +108,7 @@ function RegisterForm() {
           />
         </div>
         <div className='inputDiv'>
-          <input
+          <input className='loginInput'
             type="password"
             name="password"
             placeholder='Password'
@@ -118,7 +118,7 @@ function RegisterForm() {
           />
         </div>
         <div className='inputDiv'>
-          <input
+          <input className='loginInput'
             type="password"
             name="password"
             placeholder='Repeat Password'

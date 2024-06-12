@@ -32,6 +32,17 @@ h2{
     font-size: 27.5px;
 }
 
+input{
+    transition: 0.3s ease;
+    border: none;
+    outline: none;
+    background-color: white;
+    border-radius: 100px;
+    padding: 15px;
+    width: calc(100% - 30px);
+    
+}
+
 .primaryButton {
     width: 100%;
     padding: 15px;
@@ -93,4 +104,12 @@ h2{
 
 .mr10{
     margin-right: 10px;
+}
+
+.mb10{
+    margin-bottom: 10px;
+}
+
+.ml10{
+    margin-left: 10px;
 }

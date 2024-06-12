@@ -73,7 +73,7 @@ function LoginForm() {
         <h2>Login</h2>
         <form className='loginRegisterForm' onSubmit={handleSubmit}>
           <div className='inputDiv'>
-          <input
+          <input className='loginInput'
               type="email"
               name="email"
               placeholder='Email'
@@ -83,7 +83,7 @@ function LoginForm() {
             />
           </div>
           <div className='inputDiv'>
-            <input
+            <input className='loginInput'
               type="password"
               name="password"
               placeholder='Password'
