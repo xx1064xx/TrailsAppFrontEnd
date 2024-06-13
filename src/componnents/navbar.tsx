@@ -51,17 +51,16 @@ function Navbar() {
       <ul>
         <li><a className="white" href="/">Home</a></li>
         <li><a className="white" href="/Trails">Trails</a></li>
-        <li><a className="white" href="/Weather">Weather</a></li>
-      </ul>
-      <div className="topNavLoginButton">
-        <div className="navLoginButton">
+        <li>
         {userData ? (
-            <a className="white" href="/User">{userData.firstname} {userData.lastname} →</a>
+            <a className="white" href="/User">{userData.firstname} {userData.lastname}</a>
           ) : (
             <a className="white" href="/Login">Login</a>
           )}
-        </div>
-      </div>
+        </li>
+      </ul>
+
+      
       
     </nav>
   );

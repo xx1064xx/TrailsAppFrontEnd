@@ -24,6 +24,7 @@ function TrailTable() {
     let isInitial = true;
     const [trails, setTrails] = useState<Trail[]>([]);
     let navigate = useNavigate();
+    const [currentDateTime, setCurrentDateTime] = useState<Date>(new Date());
 
     const [credentials, setCredentials] = useState<CreateTrail>({
         location: '',
@@ -75,11 +76,29 @@ function TrailTable() {
       navigate(`/TrailView/${trailId}`);
     };
 
+    function getBackgroundClass(dateAndTime: string) {
+
+      const existingDateTime: Date = new Date(dateAndTime);
+
+      if(existingDateTime > currentDateTime){
+        return 'background now';
+      }
+      else{
+        return 'background past';
+      }
+
+
+
+    }
+
     useEffect(() => {
         const effectFunction = async () => {
           if (isInitial) {
             isInitial = false;
             
+            const now = new Date();
+            setCurrentDateTime(now);
+            console.log(currentDateTime);
     
             try {
                 const response = await fetch('https://localhost:7052/api/Trail/getTrails', {
@@ -118,7 +137,7 @@ function TrailTable() {
         <div className="trailContentDiv">
           <div className="contentDiv">
             {trails.map((trail) => ( 
-                <div className="background" onClick={() => handleTrailClick(trail.trailId)} key={trail.trailId}>
+                <div className={getBackgroundClass(trail.dateAndTime)} onClick={() => handleTrailClick(trail.trailId)} key={trail.trailId}>
                     <div className="content">
                       <div className="trailListDiv">
                         <h3>{trail.name}</h3>
