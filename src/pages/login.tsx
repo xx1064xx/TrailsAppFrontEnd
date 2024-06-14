@@ -1,6 +1,6 @@
 
-import LoginForm from "../componnents/login";
 import Navbar from "../componnents/navbar";
+import LoginForm from "../componnents/login";
 import Footer from "../componnents/footer";
 import SpaceField from "../componnents/space";
 

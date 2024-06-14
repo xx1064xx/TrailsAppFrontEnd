@@ -14,15 +14,18 @@ function Navbar() {
   const token = localStorage.getItem('jwt-token');
   var [userData, setUserData] = useState<FetchData | null>(null);
   const navigate = useNavigate();
-  const hamburgerMenu = document.querySelector('.hamburgerMenu');
-  const nav = document.querySelector('.navUl');
-  const logo = document.querySelector('.logoDiv');
-  const body = document.querySelector('.body');
-  const rest = document.querySelector('.rest');
-  const framDiv = document.querySelector('.frameDiv');
+  
   let isInitial = true;
 
   function changeHamburgerMenu() {
+    const hamburgerMenu = document.querySelector('.hamburgerMenu');
+    const nav = document.querySelector('.navUl');
+    const logo = document.querySelector('.logoDiv');
+    const body = document.querySelector('.body');
+    const rest = document.querySelector('.rest');
+    const framDiv = document.querySelector('.frameDiv');
+
+
     hamburgerMenu?.classList.toggle('active');
     nav?.classList.toggle('active');
     logo?.classList.toggle('active');
