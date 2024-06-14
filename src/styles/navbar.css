@@ -61,7 +61,7 @@ h1{
     }
 
     .logoDiv.active {
-        height: 5rem;
+        height: calc(var(--headerHeight) + 4px);
         background-color: var(--vineRed);
     }
 
