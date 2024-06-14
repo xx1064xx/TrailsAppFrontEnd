@@ -18,5 +18,7 @@
     --spaceHeight: 275px;
     --bigSpaceHeight: calc(var(--mainPictureHeight) - var(--headerHeight));
 
+    --bigFont: 22px;
+
 
   }

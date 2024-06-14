@@ -6,6 +6,10 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.body.active {
+    overflow: hidden;
+}
+
 
 a{
     font-size: 18px;
@@ -102,6 +106,22 @@ input{
     
 }
 
+.frameDiv.active {
+    
+    display: flex;
+    justify-content: center;
+    background-image: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: var(--mainPictureHeight);
+    background-color: var(--vineRed);
+
+    position: relative;
+    
+}
+
 .mainDiv{
     max-width: 1500px;
     width: 100%;
@@ -117,6 +137,11 @@ input{
     z-index: -1;
     position: fixed;
     background-color: var(--lightWhite);
+}
+
+.rest.active {
+    
+    background-color: var(--vineRed);
 }
 
 .contentDiv{

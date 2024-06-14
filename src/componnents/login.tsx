@@ -68,7 +68,7 @@ function LoginForm() {
   };
 
   return (
-    <div className='contentCard'>
+    <div className='contentCard contentAligner'>
       <div className='loginDiv'>
         <h2>Login</h2>
         <form className='loginRegisterForm' onSubmit={handleSubmit}>

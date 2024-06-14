@@ -26,40 +26,56 @@ h1{
 }
 
 
-ul{
+.navUl{
     width: 100%;
+    
     list-style-type: none;
     align-items: center;
     justify-content: space-around;
     display: flex;
 }
 
+@media screen and (max-width: 768px) {
+    
+    .navUl{
+        display: none;
+        
+    }
 
-.topNavLoginButton{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 5rem;
-}
+    .navUl.active{
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        height: calc(100vh - var(--headerHeight));
+        background-color: var(--vineRed);
+        z-index: 999;
+    }
 
-.navLoginButton{
-    transition: ease 0.3s;
-    border-radius: 100px;
-    background-color: var(--darkBlue);
-}
+    .navUl li a{
+        font-size: var(--bigFont);
+    }
 
-.navLoginButton:hover {
-    padding: 0px;
-}
+    nav{
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 
-.navLoginButton a {
-    transition: ease 0.3s;
-    padding: 10px;
-    display: inline-block;
-    white-space: nowrap;
-}
+    .logoDiv.active {
+        height: 5rem;
+        background-color: var(--vineRed);
+    }
 
-.navLoginButton a:hover{
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
+    .logoDiv.active a {
+       display: none;
+    }
+
+    .logoDiv.active a img{
+        display: none;
+     }
+
+     .logoDiv.active h1{
+        display: none;
+     }
+
+  }
+

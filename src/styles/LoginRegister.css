@@ -70,3 +70,26 @@
     background-position: center;
     width: 50%;
 }
+
+.contentAligner{
+    flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .contentAligner{
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    .theOtherDiv{
+        display: none;
+    }
+
+    .loginDiv{
+        width: 100%;
+        height: 50%;
+    }
+
+  }

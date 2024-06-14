@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState} from "react";
 import '../styles/navbar.css';
+import '../styles/hamburgerMenu.css';
 import { getUser } from '../functions/fetch';
 
 interface FetchData {
@@ -13,7 +14,22 @@ function Navbar() {
   const token = localStorage.getItem('jwt-token');
   var [userData, setUserData] = useState<FetchData | null>(null);
   const navigate = useNavigate();
+  const hamburgerMenu = document.querySelector('.hamburgerMenu');
+  const nav = document.querySelector('.navUl');
+  const logo = document.querySelector('.logoDiv');
+  const body = document.querySelector('.body');
+  const rest = document.querySelector('.rest');
+  const framDiv = document.querySelector('.frameDiv');
   let isInitial = true;
+
+  function changeHamburgerMenu() {
+    hamburgerMenu?.classList.toggle('active');
+    nav?.classList.toggle('active');
+    logo?.classList.toggle('active');
+    body?.classList.toggle('active');
+    rest?.classList.toggle('active');
+    framDiv?.classList.toggle('active');
+  }
 
   useEffect(() => {
     const effectFunction = async () => {
@@ -47,8 +63,14 @@ function Navbar() {
         </a>
         <h1>Trail Tales</h1>
       </div>
-      
-      <ul>
+      <div>
+      <div className="hamburgerMenu" onClick={changeHamburgerMenu}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      </div>
+      <ul className="navUl">
         <li><a className="white" href="/">Home</a></li>
         <li><a className="white" href="/Trails">Trails</a></li>
         <li>
