@@ -10,7 +10,7 @@
 }
 
 .past{
-    background-color: var(--darkerGray);
+    background-color: var(--lightGray);
     
 }
 
@@ -39,7 +39,11 @@
     margin: 10px;
 }
 
-.background:hover {
+.past:hover{
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.now:hover {
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
     background-color: var(--hoverWhite);
 }
@@ -95,3 +99,17 @@
     height: 410px;
     width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+    
+    .trailContentDiv {
+        flex-direction: column-reverse;
+    }
+
+    .background{
+        
+        margin-right: 0px;
+        
+    }
+
+  }

@@ -33,24 +33,29 @@ function WeatherTable() {
 
 
   return (
-    <table>
-    <thead>
-      <tr>
-        <th>Date</th>
-        <th>Temperature (°C)</th>
-        <th>Summary</th>
-      </tr>
-    </thead>
-    <tbody>
-      {weatherData.map((item) => (
-        <tr key={item.date}>
-          <td>{item.date}</td>
-          <td>{item.temperatureC}</td>
-          <td>{item.summary}</td>
-        </tr>
-      ))}
-    </tbody>
-  </table>
+    <div className='extendedContentDiv'>
+      <div className='bigContentCard'>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Temperature (°C)</th>
+              <th>Summary</th>
+            </tr>
+          </thead>
+          <tbody>
+            {weatherData.map((item) => (
+              <tr key={item.date}>
+                <td>{item.date}</td>
+                <td>{item.temperatureC}</td>
+                <td>{item.summary}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
   );
 };
 

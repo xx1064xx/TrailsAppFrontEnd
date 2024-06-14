@@ -1,8 +1,8 @@
-import React from "react";
 
 import Navbar from "../componnents/navbar";
 import WeatherTable from "../componnents/weather";
 import Footer from "../componnents/footer";
+import SpaceField from "../componnents/space";
 
 
 function IndexPage() {
@@ -11,6 +11,7 @@ function IndexPage() {
       <div>
         
         <Navbar/> {}
+        <SpaceField/> {}
         <WeatherTable/> {}
         <Footer/> {}
        

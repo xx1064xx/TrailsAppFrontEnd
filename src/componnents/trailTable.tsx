@@ -108,14 +108,21 @@ function TrailTable() {
                       'Authorization': `Bearer ${token}`,
                     },
                   });
-                const data = (await response.json()) as Trail[];
+                
 
-                console.log(data)
-                setTrails(data);
+                if (response.ok) {
+                  const data = (await response.json()) as Trail[];
+
+                  console.log(data)
+                  setTrails(data);
+                } else {
+                  localStorage.removeItem('jwt-token');
+                }
     
         
                 } catch (error) {
-                console.error('Error fetching the weather data:', error);
+                
+                  localStorage.removeItem('jwt-token');
         
                 }
           }

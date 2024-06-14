@@ -5,7 +5,17 @@ function Footer() {
 
   return (
     <footer>
-        <img src="/TrailTalesBright.svg" alt="Logo" />
+      <div>
+        <a href='/' className='flex center'>
+          <img src="/TrailTalesWhite.svg" alt="Logo" />
+          <h2 className='white'>Trail Tales</h2>
+        </a>
+        
+      </div>
+      <div>
+        <p className='white'>© 2024 | Julian Saxer</p>
+      </div>
+        
     </footer>
   );
 }
